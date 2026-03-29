@@ -62,29 +62,7 @@ User Query (Streamlit UI)
 
 ## 📁 Project Structure
 
-```
-WorkBurnout_AI_assistant/
-│
-├── app.py                   # Streamlit chat interface (entry point)
-├── .env                     # API keys (not committed)
-├── requirements.txt         # Project dependencies
-├── README.md
-│
-├── data/
-│   └── documents/           # Source PDF documents
-│       └── workburnout.pdf
-│
-├── faiss_index/             # Persisted FAISS vector index (auto-generated)
-│   ├── index.faiss
-│   └── index.pkl
-│
-└── src/
-    ├── __init__.py          # Package interface
-    ├── ingestion.py         # Document loading, chunking, embeddings
-    ├── vector_store.py      # FAISS index: build, save, load
-    ├── retriever.py         # Semantic search logic
-    └── llm_chain.py         # RAG chain with prompt engineering
-```
+
 
 ---
 
@@ -110,14 +88,3 @@ A Streamlit app provides the user-facing interface. The RAG chain is built once 
 
 
 
-
-
-
-
-
-
-
-
-## 📄 License
-
-MIT License — feel free to use this project as a reference or starting point.
