@@ -4,7 +4,7 @@ from langchain_huggingface import HuggingFaceEmbeddings
 
 
 def load_pdf_documents():
-    pdf_loader = PyPDFLoader("data/documents/workburnout.pdf")
+    pdf_loader = PyPDFLoader("data/documents/workbrnout.pdf")
     return pdf_loader.load()
 
 

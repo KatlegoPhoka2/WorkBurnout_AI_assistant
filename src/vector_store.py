@@ -1,17 +1,12 @@
 from langchain_community.vectorstores import FAISS
 
-# FAISS index: build, save, load
-# Step-4 Store document chunks into FAISS vector database
-
-vectorstore=FAISS.from_documents(docs,embeddings)
-
 # Step-5 Create retriever
 
 #retriever=vectorstore.as_retriever(search_kwargs={"k":3})
 
 
 from langchain_community.vectorstores import FAISS
-from ingest import load_all_documents, split_documents, get_embeddings
+from ingestion import load_all_documents, split_documents, get_embeddings
 
 
 def build_vectorstore():
