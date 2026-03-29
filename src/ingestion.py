@@ -2,6 +2,7 @@
 
 from langchain_community.document_loaders import PyPDFLoader, WebBaseLoader,PyPDFDirectoryLoader
 from langchain_text_splitters import CharacterTextSplitter
+from langchain_huggingface import HuggingFaceEmbeddings
 # Loading data 
 
 def load_pdf_documents():
@@ -29,7 +30,7 @@ all_docs =pdf_docs+ web_docs
 print(f"Total documents: {len(all_docs)}")
 
   
-# Split all documents into chunks
+#Split all documents into chunks
 
 text_splitter=CharacterTextSplitter(
 
@@ -38,5 +39,12 @@ text_splitter=CharacterTextSplitter(
 )
 
 docs=text_splitter.split_documents(all_docs)
+
+
+#Create embeddings
+
+embeddings = HuggingFaceEmbeddings(
+    model_name="sentence-transformers/all-MiniLM-L6-v2"
+)
 
 
