@@ -50,14 +50,13 @@ User Query (Streamlit UI)
 
 | Component | Technology |
 |---|---|
-| Language | Python 3.12 |
+
 | LLM Framework | LangChain (LCEL) |
 | Vector Database | FAISS |
 | Embeddings | HuggingFace `all-MiniLM-L6-v2` |
 | LLM Provider | OpenRouter (GPT-3.5-Turbo) |
 | Document Loaders | LangChain PyPDFLoader, WebBaseLoader |
 | Frontend | Streamlit |
-| Environment Management | python-dotenv |
 
 ---
 
