@@ -1,7 +1,7 @@
 # Load, chunk, embed documents
 
 from langchain_community.document_loaders import PyPDFLoader, WebBaseLoader,PyPDFDirectoryLoader
-
+from langchain_text_splitters import CharacterTextSplitter
 # Loading data 
 
 def load_pdf_documents():
@@ -29,6 +29,14 @@ all_docs =pdf_docs+ web_docs
 print(f"Total documents: {len(all_docs)}")
 
   
+# Split all documents into chunks
 
+text_splitter=CharacterTextSplitter(
+
+    chunk_size=500,
+    chunk_overlap=50
+)
+
+docs=text_splitter.split_documents(all_docs)
 
 
