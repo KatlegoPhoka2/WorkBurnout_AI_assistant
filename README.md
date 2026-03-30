@@ -25,24 +25,8 @@ Unlike a standard chatbot that relies purely on an LLM's pre-trained knowledge, 
 
 ## 🏗️ System Architecture
 
-```
-User Query (Streamlit UI)
-        │
-        ▼
-  FAISS Retriever  ◄──── HuggingFace Embeddings ◄──── Document Chunks
-        │                                                     ▲
-        │                                              PDF + Web Docs
-        ▼
-  Prompt Builder
-  (Context Injection)
-        │
-        ▼
-  LLM via OpenRouter
-  (GPT-3.5-Turbo)
-        │
-        ▼
-  Response → Streamlit Chat Interface
-```
+![image]()
+
 
 ---
 
