@@ -58,7 +58,9 @@ Retrieved chunks are injected into a carefully engineered prompt template alongs
 A Streamlit app provides the user-facing interface. The RAG chain is built once and cached in `session_state` to avoid re-loading embeddings on every message. Chat history is persisted across the session.
 
 ---
+## Streamlit bot
 
+![image](https://github.com/KatlegoPhoka2/WorkBurnout_AI_assistant/blob/bd501330483f8fd897f223fb4901143955229078/bot.png)
 
 
 
