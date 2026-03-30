@@ -25,7 +25,7 @@ Unlike a standard chatbot that relies purely on an LLM's pre-trained knowledge, 
 
 ## 🏗️ System Architecture
 
-![image]()
+![image](https://github.com/KatlegoPhoka2/WorkBurnout_AI_assistant/blob/90154f7b438379ede805f68e05ffe9be08557f08/AI%20workplace%20burnout%20assistant%20workflow.png)
 
 
 ---
