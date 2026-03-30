@@ -29,26 +29,16 @@ Unlike a standard chatbot that relies purely on an LLM's pre-trained knowledge, 
 
 
 ---
+## 🛠️ Technologies Used
 
-## 🛠️ Tech Stack
-
-| Component | Technology |
-|---|---|
-
-| LLM Framework | LangChain (LCEL) |
-| Vector Database | FAISS |
-| Embeddings | HuggingFace `all-MiniLM-L6-v2` |
-| LLM Provider | OpenRouter (GPT-3.5-Turbo) |
-| Document Loaders | LangChain PyPDFLoader, WebBaseLoader |
-| Frontend | Streamlit |
+- **LangChain** — AI orchestration framework powering the pipeline
+- **GPT-based Models** — Used for intelligent response generation
+- **Semantic Search** — Enables retrieval of contextually relevant information
+- **PDF & Web Data** — Integrated as dynamic knowledge sources
+- **Streamlit** — Powers the interactive user interface
 
 ---
 
-## 📁 Project Structure
-
-
-
----
 
 ## ⚙️ How It Works
 
